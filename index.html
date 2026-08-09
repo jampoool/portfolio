@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jan Paul Daguman — Front-End / Full-Stack Developer</title>
+<meta name="description" content="Jan Paul Daguman is a Front-End / Full-Stack Web Developer building responsive websites, e-commerce stores, and custom web applications with Laravel, React, and WordPress.">
+
+<!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (code/labels) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ SKIP LINK ============ -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo" aria-label="Jan Paul Daguman — home">
+      <span class="nav__logo-mark">JP<span class="nav__logo-dot">.</span>dev</span>
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#home" class="nav__link" data-nav>Home</a>
+      <a href="#about" class="nav__link" data-nav>About</a>
+      <a href="#skills" class="nav__link" data-nav>Skills</a>
+      <a href="#projects" class="nav__link" data-nav>Projects</a>
+      <a href="#experience" class="nav__link" data-nav>Experience</a>
+      <a href="#contact" class="nav__link" data-nav>Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn--primary btn--sm nav__cta">Let's Work Together</a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" class="mobile-menu__link" data-nav>Home</a>
+    <a href="#about" class="mobile-menu__link" data-nav>About</a>
+    <a href="#skills" class="mobile-menu__link" data-nav>Skills</a>
+    <a href="#projects" class="mobile-menu__link" data-nav>Projects</a>
+    <a href="#experience" class="mobile-menu__link" data-nav>Experience</a>
+    <a href="#contact" class="mobile-menu__link" data-nav>Contact</a>
+    <a href="#contact" class="btn btn--primary mobile-menu__cta">Let's Work Together</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="hero__grid" aria-hidden="true"></div>
+
+    <div class="hero__inner">
+      <div class="hero__copy" data-reveal>
+        <p class="eyebrow"><span class="eyebrow__dot"></span>Available for freelance &amp; contract work</p>
+
+        <h1 class="hero__title">
+          Front-End / Full-Stack<br>
+          Developer <span class="hero__title-accent">based in the Philippines.</span>
+        </h1>
+
+        <p class="hero__lead">
+          I build responsive websites, e-commerce stores, and custom web applications —
+          from pixel-accurate interfaces to the Laravel and PHP backends that run underneath them.
+        </p>
+
+        <div class="hero__actions">
+          <a href="https://github.com/jampoool" class="btn btn--primary">View My Work</a>
+          <a href="mailto:janpaul.dev@gmail.com" class="btn btn--ghost">Let's Work Together</a>
+        </div>
+
+        <div class="hero__social" aria-label="Social links">
+          <a href="https://github.com/jampoool" class="hero__social-link" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/jan-paul-daguman-416973253/" class="hero__social-link" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:janpaul.dev@gmail.com" class="hero__social-link">Email</a>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-reveal>
+        <div class="editor" role="img" aria-label="Code editor showing a JavaScript function that describes the developer">
+          <div class="editor__bar">
+            <span class="editor__dot editor__dot--r"></span>
+            <span class="editor__dot editor__dot--y"></span>
+            <span class="editor__dot editor__dot--g"></span>
+            <span class="editor__file">developer.js</span>
+          </div>
+          <pre class="editor__body"><code id="typedCode"></code><span class="editor__cursor" id="typedCursor"></span></pre>
+        </div>
+        <div class="editor__status">
+          <span class="editor__status-item"><i class="status-dot"></i>build passing</span>
+          <span class="editor__status-item">UTF-8</span>
+          <span class="editor__status-item">JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRUST / SKILLS STRIP ============ -->
+  <section class="marquee" aria-label="Technologies I work with">
+    <div class="marquee__track">
+      <div class="marquee__group">
+        <span>PHP</span><span>·</span><span>Laravel</span><span>·</span><span>JavaScript</span><span>·</span>
+        <span>WordPress</span><span>·</span><span>WooCommerce</span><span>·</span><span>React</span><span>·</span>
+        <span>Node.js</span><span>·</span><span>MySQL</span><span>·</span><span>Git</span><span>·</span>
+      </div>
+      <div class="marquee__group" aria-hidden="true">
+        <span>PHP</span><span>·</span><span>Laravel</span><span>·</span><span>JavaScript</span><span>·</span>
+        <span>WordPress</span><span>·</span><span>WooCommerce</span><span>·</span><span>React</span><span>·</span>
+        <span>Node.js</span><span>·</span><span>MySQL</span><span>·</span><span>Git</span><span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="section__inner about">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow eyebrow--muted">01 · About</p>
+        <h2 class="section__title">I care about what happens after "it works."</h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__text" data-reveal>
+          <p>
+            I'm Jan Paul Daguman, a Front-End / Full-Stack Web Developer from the Philippines with a
+            background in Information Technology. I work across the full stack — from the interface
+            a visitor clicks on, to the Laravel or WordPress backend that keeps the site running.
+          </p>
+          <p>
+            My approach is simple: a website should look considered, load fast, and be easy for the
+            client to maintain long after the project ships. I spend as much attention on spacing,
+            hierarchy, and responsiveness as I do on the code that powers a checkout flow or a REST API.
+          </p>
+          <p>
+            I help clients turn a rough idea, a Figma file, or an existing outdated site into something
+            they're proud to send people to — whether that's a marketing website, a WooCommerce store,
+            or a custom internal tool.
+          </p>
+        </div>
+
+        <div class="about__stats" data-reveal>
+          <div class="stat-card">
+            <span class="stat-card__value">5 Projects</span>
+            <span class="stat-card__label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__value">15+</span>
+            <span class="stat-card__label">Technologies</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__value">4 Years</span>
+            <span class="stat-card__label">Years of Experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section section--alt" id="services">
+    <div class="section__inner">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow eyebrow--muted">02 · Services</p>
+        <h2 class="section__title">What I can build for you</h2>
+        <p class="section__sub">From a single landing page to a full custom application — here's where I help.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">◧</div>
+          <h3 class="service-card__title">Front-End Development</h3>
+          <p class="service-card__text">Responsive, accessible, and modern interfaces built with clean HTML, CSS, and JavaScript.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">⌥</div>
+          <h3 class="service-card__title">Full-Stack Development</h3>
+          <p class="service-card__text">Complete web applications built with Laravel, Node.js, and modern front-end frameworks.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">◫</div>
+          <h3 class="service-card__title">WordPress Development</h3>
+          <p class="service-card__text">Custom WordPress websites, theme customization, and plugin integrations.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">◨</div>
+          <h3 class="service-card__title">WooCommerce Development</h3>
+          <p class="service-card__text">E-commerce customization — product pages, checkout flow, and custom store functionality.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">⌬</div>
+          <h3 class="service-card__title">Website Optimization</h3>
+          <p class="service-card__text">Responsive fixes, performance tuning, and UI improvements for existing websites.</p>
+        </article>
+
+        <article class="service-card" data-reveal>
+          <div class="service-card__icon" aria-hidden="true">⌘</div>
+          <h3 class="service-card__title">Custom Web Applications</h3>
+          <p class="service-card__text">Business-specific tools and applications built around your workflow, not a template.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECHNICAL SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section__inner">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow eyebrow--muted">03 · Skills</p>
+        <h2 class="section__title">Tools I reach for</h2>
+      </div>
+
+      <div class="skills-groups">
+        <div class="skills-group" data-reveal>
+          <h3 class="skills-group__title"><span class="skills-group__index">Frontend</span></h3>
+          <div class="skill-badges">
+            <span class="skill-badge">HTML5</span>
+            <span class="skill-badge">CSS3</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">Bootstrap</span>
+            <span class="skill-badge">Tailwind CSS</span>
+            <span class="skill-badge">React</span>
+            <span class="skill-badge">Vue.js</span>
+          </div>
+        </div>
+
+        <div class="skills-group" data-reveal>
+          <h3 class="skills-group__title"><span class="skills-group__index">Backend</span></h3>
+          <div class="skill-badges">
+            <span class="skill-badge">PHP</span>
+            <span class="skill-badge">Laravel</span>
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="skills-group" data-reveal>
+          <h3 class="skills-group__title"><span class="skills-group__index">CMS / E-Commerce</span></h3>
+          <div class="skill-badges">
+            <span class="skill-badge">WordPress</span>
+            <span class="skill-badge">WooCommerce</span>
+          </div>
+        </div>
+
+        <div class="skills-group" data-reveal>
+          <h3 class="skills-group__title"><span class="skills-group__index">Database</span></h3>
+          <div class="skill-badges">
+            <span class="skill-badge">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skills-group" data-reveal>
+          <h3 class="skills-group__title"><span class="skills-group__index">Tools</span></h3>
+          <div class="skill-badges">
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">GitHub</span>
+            <span class="skill-badge">VS Code</span>
+            <span class="skill-badge">Figma</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURED PROJECTS ============ -->
+  <section class="section section--alt" id="projects">
+    <div class="section__inner">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow eyebrow--muted">04 · Projects</p>
+        <h2 class="section__title">Featured work</h2>
+        <p class="section__sub">A mix of mobile, e-commerce, WordPress, and custom application work.</p>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Filter projects" data-reveal>
+        <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+        <button class="filter-btn" data-filter="ecommerce" role="tab" aria-selected="false">E-Commerce</button>
+        <button class="filter-btn" data-filter="wordpress" role="tab" aria-selected="false">WordPress</button>
+        <button class="filter-btn" data-filter="applications" role="tab" aria-selected="false">Applications</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+
+        <article class="project-card" data-category="applications" data-reveal data-project="skillswap">
+          <div class="project-card__media project-card__media--skillswap" aria-hidden="true">
+            <span class="project-card__media-tag">React Native</span>
+          </div>
+          <div class="project-card__body">
+            <p class="project-card__category">Mobile Application</p>
+            <h3 class="project-card__title">SkillSwap Balingasag</h3>
+            <p class="project-card__text">A local gig platform concept where community members can discover and offer services near them.</p>
+            <ul class="project-card__stack">
+              <li>React Native</li><li>Expo</li><li>TypeScript</li><li>REST API</li><li>MySQL</li>
+            </ul>
+            <div class="project-card__actions">
+              <button class="btn btn--sm btn--primary" data-open-project="skillswap">View Project</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="ecommerce" data-reveal data-project="woocommerce">
+          <div class="project-card__media project-card__media--woo" aria-hidden="true">
+            <span class="project-card__media-tag">WooCommerce</span>
+          </div>
+          <div class="project-card__body">
+            <p class="project-card__category">E-Commerce</p>
+            <h3 class="project-card__title">WooCommerce Store Customization</h3>
+            <p class="project-card__text">Custom product pages, checkout improvements, and store functionality built on WordPress + WooCommerce.</p>
+            <ul class="project-card__stack">
+              <li>WordPress</li><li>WooCommerce</li><li>PHP</li><li>JavaScript</li>
+            </ul>
+            <div class="project-card__actions">
+              <button class="btn btn--sm btn--primary" data-open-project="woocommerce">View Project</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="wordpress" data-reveal data-project="ata">
+          <div class="project-card__media project-card__media--ata" aria-hidden="true">
+             <img 
+            src="assets/images/ataphotobooth.png" 
+            alt="ATA Photo Booths website screenshot"
+            loading="lazy">
+            <span class="project-card__media-tag">WordPress</span>
+          </div>
+          <div class="project-card__body">
+            <p class="project-card__category">WordPress</p>
+            <h3 class="project-card__title">ATA Photo Booths</h3>
+            <p class="project-card__text">Website development and customization for a photo booth rental business.</p>
+            <ul class="project-card__stack">
+              <li>WordPress</li><li>Elementor</li><li>CSS3</li>
+            </ul>
+            <div class="project-card__actions">
+              <button class="btn btn--sm btn--primary" data-open-project="ata">View Project</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="wordpress" data-reveal data-project="constantin">
+          <div class="project-card__media project-card__media--constantin" aria-hidden="true">
+             <img 
+            src="assets/images/constantin.png" 
+            alt="ATA Photo Booths website screenshot"
+            loading="lazy">
+            <span class="project-card__media-tag">WordPress</span>
+          </div>
+          <div class="project-card__body">
+            <p class="project-card__category">WordPress</p>
+            <h3 class="project-card__title">Constantin Floors</h3>
+            <p class="project-card__text">Business website development and customization for a flooring company.</p>
+            <ul class="project-card__stack">
+              <li>WordPress</li><li>PHP</li><li>CSS3</li>
+            </ul>
+            <div class="project-card__actions">
+              <button class="btn btn--sm btn--primary" data-open-project="constantin">View Project</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="wordpress ecommerce" data-reveal data-project="memory">
+          <div class="project-card__media project-card__media--memory" aria-hidden="true">
+            <span class="project-card__media-tag">WordPress</span>
+          </div>
+          <div class="project-card__body">
+            <p class="project-card__category">WordPress · E-Commerce</p>
+            <h3 class="project-card__title">Memory Creations</h3>
+            <p class="project-card__text">Website for a custom-products business — ref magnets, keychains, stickers, and personalized items.</p>
+            <ul class="project-card__stack">
+              <li>WordPress</li><li>WooCommerce</li><li>CSS3</li>
+            </ul>
+            <div class="project-card__actions">
+              <button class="btn btn--sm btn--primary" data-open-project="memory">View Project</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="web applications" data-reveal data-project="custom">
+          <div class="project-card__media project-card__media--custom" aria-hidden="true">
+            <span class="project-card__media-tag">Laravel</span>
+          </div>
+          <div class="project-card__body">
+            <p class="project-card__category">Custom Application</p>
+            <h3 class="project-card__title">Custom Web Application</h3>
+            <p class="project-card__text">A business-specific web application built on Laravel with a REST API and a Tailwind front end.</p>
+            <ul class="project-card__stack">
+              <li>Laravel</li><li>PHP</li><li>MySQL</li><li>Tailwind CSS</li>
+            </ul>
+            <div class="project-card__actions">
+              <button class="btn btn--sm btn--primary" data-open-project="custom">View Project</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECT CASE STUDY MODAL ============ -->
+  <div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel">
+      <button class="modal__close" data-close-modal aria-label="Close case study">×</button>
+      <p class="modal__category" id="modalCategory">Category</p>
+      <h3 class="modal__title" id="modalTitle">Project title</h3>
+
+      <div class="modal__section">
+        <h4>Problem</h4>
+        <p id="modalProblem"></p>
+      </div>
+      <div class="modal__section">
+        <h4>Solution</h4>
+        <p id="modalSolution"></p>
+      </div>
+      <div class="modal__section">
+        <h4>Key Features</h4>
+        <ul id="modalFeatures"></ul>
+      </div>
+      <div class="modal__section">
+        <h4>Outcome</h4>
+        <p id="modalOutcome"></p>
+      </div>
+      <div class="modal__section">
+        <h4>Technologies</h4>
+        <ul class="modal__stack" id="modalStack"></ul>
+      </div>
+
+      <div class="modal__actions">
+        <a href="#" class="btn btn--primary" id="modalLink" target="_blank" rel="noopener">View Live Site</a>
+        <a href="#" class="btn btn--ghost" id="modalGithub" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section" id="process">
+    <div class="section__inner">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow eyebrow--muted">05 · Process</p>
+        <h2 class="section__title">How a project moves from idea to launch</h2>
+      </div>
+
+      <ol class="process-list">
+        <li class="process-step" data-reveal>
+          <span class="process-step__index">01</span>
+          <div>
+            <h3 class="process-step__title">Discover</h3>
+            <p class="process-step__text">Understand your goals, your users, and what the site or app needs to do.</p>
+          </div>
+        </li>
+        <li class="process-step" data-reveal>
+          <span class="process-step__index">02</span>
+          <div>
+            <h3 class="process-step__title">Plan</h3>
+            <p class="process-step__text">Define structure, features, and the right technology for the job.</p>
+          </div>
+        </li>
+        <li class="process-step" data-reveal>
+          <span class="process-step__index">03</span>
+          <div>
+            <h3 class="process-step__title">Design</h3>
+            <p class="process-step__text">Create the interface and user experience, grounded in your content.</p>
+          </div>
+        </li>
+        <li class="process-step" data-reveal>
+          <span class="process-step__index">04</span>
+          <div>
+            <h3 class="process-step__title">Develop</h3>
+            <p class="process-step__text">Build the website or application with clean, maintainable code.</p>
+          </div>
+        </li>
+        <li class="process-step" data-reveal>
+          <span class="process-step__index">05</span>
+          <div>
+            <h3 class="process-step__title">Test</h3>
+            <p class="process-step__text">Check responsiveness, functionality, and performance across devices.</p>
+          </div>
+        </li>
+        <li class="process-step" data-reveal>
+          <span class="process-step__index">06</span>
+          <div>
+            <h3 class="process-step__title">Launch</h3>
+            <p class="process-step__text">Deploy the finished product and support it after it goes live.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section section--alt" id="experience">
+    <div class="section__inner">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow eyebrow--muted">06 · Experience</p>
+        <h2 class="section__title">Development experience</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <h3 class="timeline__title">Full-Stack &amp; Laravel Development</h3>
+            <p class="timeline__text">Building web applications with Laravel, PHP, and MySQL — from database design to REST API endpoints consumed by a front end.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <h3 class="timeline__title">WordPress &amp; WooCommerce Development</h3>
+            <p class="timeline__text">Developing and customizing WordPress websites and WooCommerce stores — themes, plugins, and custom functionality.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <h3 class="timeline__title">Front-End Development</h3>
+            <p class="timeline__text">Turning designs and requirements into responsive interfaces with HTML5, CSS3, JavaScript, Bootstrap, and Tailwind CSS.</p>
+          </div>
+        </div>
+
+        <div class="timeline__item" data-reveal>
+          <div class="timeline__marker" aria-hidden="true"></div>
+          <div class="timeline__content">
+            <h3 class="timeline__title">Custom Web Applications &amp; API Integration</h3>
+            <p class="timeline__text">Building custom applications with React, Vue.js, and Node.js, and integrating them with REST APIs and backend services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY WORK WITH ME ============ -->
+  <section class="section" id="why">
+    <div class="section__inner">
+      <div class="section__head" data-reveal>
+        <p class="eyebrow eyebrow--muted">07 · Why Me</p>
+        <h2 class="section__title">Why work with me</h2>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-item" data-reveal>
+          <h3 class="why-item__title">Clean, maintainable code</h3>
+          <p class="why-item__text">Code that the next developer — or you — can actually read and extend.</p>
+        </div>
+        <div class="why-item" data-reveal>
+          <h3 class="why-item__title">Responsive by default</h3>
+          <p class="why-item__text">Every project is built and tested across desktop, tablet, and mobile.</p>
+        </div>
+        <div class="why-item" data-reveal>
+          <h3 class="why-item__title">Business-focused development</h3>
+          <p class="why-item__text">I build toward your goals, not just a spec sheet.</p>
+        </div>
+        <div class="why-item" data-reveal>
+          <h3 class="why-item__title">Full-stack understanding</h3>
+          <p class="why-item__text">Comfortable across the interface and the backend that supports it.</p>
+        </div>
+        <div class="why-item" data-reveal>
+          <h3 class="why-item__title">Reliable communication</h3>
+          <p class="why-item__text">Clear updates, realistic timelines, no disappearing mid-project.</p>
+        </div>
+        <div class="why-item" data-reveal>
+          <h3 class="why-item__title">A problem-solving mindset</h3>
+          <p class="why-item__text">When something breaks, I treat it as a puzzle to solve, not a blocker to escalate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section section--alt" id="contact">
+    <div class="section__inner contact">
+      <div class="section__head section__head--center" data-reveal>
+        <p class="eyebrow eyebrow--muted">08 · Contact</p>
+        <h2 class="section__title">Have a project in mind?<br>Let's build it.</h2>
+        <p class="section__sub">Tell me a bit about what you're working on — I'll reply within a day or two.</p>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info" data-reveal>
+          <a href="mailto:hello@example.com" class="contact__info-item">
+            <span class="contact__info-label">Email</span>
+            <span class="contact__info-value">janpaul.dev@gmail.com</span>
+          </a>
+          <a href="https://github.com/" class="contact__info-item" target="_blank" rel="noopener">
+            <span class="contact__info-label">GitHub</span>
+            <span class="contact__info-value">https://github.com/jampoool</span>
+          </a>
+          <a href="https://linkedin.com/" class="contact__info-item" target="_blank" rel="noopener">
+            <span class="contact__info-label">LinkedIn</span>
+            <span class="contact__info-value">https://www.linkedin.com/in/jan-paul-daguman-416973253/</span>
+          </a>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate data-reveal>
+          <!-- Frontend-only form. Point this at your backend/API endpoint of choice
+               (e.g. a serverless function, PHP mailer, or Formspree-style endpoint)
+               by handling the 'submit' event in js/script.js -->
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+              <span class="form-error" id="emailError"></span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="projectType">Project Type</label>
+              <select id="projectType" name="projectType" required>
+                <option value="" disabled selected>Select a project type</option>
+                <option value="website">Website</option>
+                <option value="ecommerce">E-Commerce Store</option>
+                <option value="wordpress">WordPress Site</option>
+                <option value="webapp">Custom Web Application</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="form-error" id="projectTypeError"></span>
+            </div>
+            <div class="form-field">
+              <label for="budget">Budget</label>
+              <select id="budget" name="budget" required>
+                <option value="" disabled selected>Select a budget range</option>
+                <option value="small">Under $1,000</option>
+                <option value="medium">$1,000 – $5,000</option>
+                <option value="large">$5,000 – $15,000</option>
+                <option value="enterprise">$15,000+</option>
+              </select>
+              <span class="form-error" id="budgetError"></span>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--block">Start a Project</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="nav__logo-mark">JP<span class="nav__logo-dot">.</span>dev</span>
+      <p class="footer__title">Front-End / Full-Stack Web Developer</p>
+      <p class="footer__tagline">Designed &amp; developed by Jan Paul Daguman.</p>
+    </div>
+
+    <nav class="footer__nav" aria-label="Footer">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer__social">
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="mailto:hello@example.com">Email</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© <span id="year"></span> Jan Paul Daguman. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
